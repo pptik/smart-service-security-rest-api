@@ -29,7 +29,7 @@ database.connect().then(db =>{
         res.status(200).send(commonMsg.service_not_responding);
     });
     /** init server **/
-    let port = normalizePort(process.env.PORT || '3070');
+    let port = normalizePort(process.env.PORT || '3071');
     app.set('port', port);
     let server = http.createServer(app);
     server.listen(port);
